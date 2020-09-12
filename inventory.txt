@@ -1,0 +1,13 @@
+[alexism]
+DKBN01  rancher_cluster_roles='["controlplane","etcd","worker"]' ansible_host=192.168.22.201
+DKBN02  rancher_cluster_roles='["controlplane","etcd","worker"]' ansible_host=192.168.22.202
+
+[alexism:vars]
+user_mail=alexis.maior@planejamento.gov.br
+
+[dev:children]
+alexism
+
+
+[DNS]
+psdc01
